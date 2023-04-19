@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header__img {
   width: 100%;
 }
-.header .more-info {
+.more-info {
   font-family: fantasy, cursive;
 }
 
@@ -27,7 +27,7 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task, .list-label, .section-input {
+.list-label, .section-input, .add-task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -37,9 +37,9 @@ body {
 }
 ul {
   margin:0;
-  padding: 0px;
+  padding: 0;
 }
-li, h3 {
+li {
   list-style:none;
 }
 input,button {
@@ -68,7 +68,7 @@ input,button {
   margin: 0;
   text-transform: uppercase;
 }
-.section-input {
+.section-input, .add-task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,7 +80,7 @@ input,button {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.section-input:focus {
+.section-input:focus , .add-task__input:focus {
   color: #333;
 }
 
@@ -94,7 +94,7 @@ input,button {
 }
 
 /* Task list */
-li {
+.list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -102,47 +102,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.list-item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.section-input-checkbox {
   margin: 0 10px;
 }
-li > label {
+.list-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >  input[type="text"] {
+.section-input, .add-task__input {
   width: 226px
 }
-.delete-btn img {
+.delete-btn__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-btn img:hover {
+.delete-btn__image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-list label {
+.completed-list .list-labe {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li .section-input {
+.section-input {
   display:none
 }
 
-ul li.edit-mode .section-input {
+.edit-mode .section-input {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode .list-label {
   display:none;
 }
