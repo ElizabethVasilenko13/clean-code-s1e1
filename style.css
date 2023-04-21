@@ -55,7 +55,8 @@ li {
   list-style: none;
 }
 
-input,button {
+input,
+button {
   outline: none;
 }
 
@@ -127,7 +128,7 @@ input,button {
   vertical-align: middle;
 }
 
-.section-input-checkbox {
+.checkbox-input {
   margin: 0 10px;
 }
 
@@ -154,7 +155,7 @@ input,button {
 }
 
 /* Completed */
-.completed-list .list-label {
+.completed-section__list .list-label {
   text-decoration: line-through;
   color: #888;
 }
@@ -164,11 +165,11 @@ input,button {
   display: none;
 }
 
-.edit-mode .section-input {
+.list-item_edit .section-input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .list-label {
+.list-item_edit .list-label {
   display: none;
 }
